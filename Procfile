@@ -1,1 +1,1 @@
-web: npm run build && bun dev --port $PORT
+web: bun dev --port $PORT
