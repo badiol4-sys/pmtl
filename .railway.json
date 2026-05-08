@@ -1,6 +1,5 @@
 {
   "name": "tony-laine-app",
   "runtime": "nodejs",
-  "buildCommand": "npm run build",
-  "startCommand": "bun dev --port $PORT"
+  "startCommand": "npm run dev"
 }
