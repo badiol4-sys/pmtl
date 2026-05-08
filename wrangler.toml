@@ -1,0 +1,16 @@
+name = "tony-laine-app"
+type = "javascript"
+account_id = "58eeea88c91135f3236db74f1cddacbc"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2025-01-01"
+
+[[env.production]]
+name = "tony-laine-production"
+routes = [{ pattern = "tonylaine.pages.dev/*", zone_name = "pages.dev" }]
+
+[env.production.env]
+ENVIRONMENT = "production"
+CLAUDE_API_KEY = "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"
+JWT_SECRET = "tony-laine-2026-super-secure-jwt-secret-key-min32chars-abc123"

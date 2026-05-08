@@ -1,0 +1,24 @@
+{
+  "name": "tony-laine-app",
+  "type": "javascript",
+  "main": "src/server/index.ts",
+  "compatibility_date": "2025-01-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "env": {
+    "production": {
+      "name": "tony-laine-production",
+      "routes": [
+        {
+          "pattern": "tonylaine.pages.dev/*",
+          "zone_name": "pages.dev"
+        }
+      ]
+    }
+  },
+  "vars": {
+    "ENVIRONMENT": "production"
+  },
+  "durable_objects": {
+    "bindings": []
+  }
+}
